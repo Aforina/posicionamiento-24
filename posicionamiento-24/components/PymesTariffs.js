@@ -2,7 +2,7 @@
 const PymesTariffs = () => {
     return (
       <div id='pymestariffs' className='py-20 w-screen relative max-w-7xl mx-auto place-self-center text-[#4B505C]'>
-        <h1 className='text-4xl font-bold pb-14'>Tarifas Para Pymes</h1>
+        <h1 className='text-4xl font-bold pb-14 text-center'>Tarifas Para Pymes</h1>
         <div className='grid grid-cols-2'>
             <div className='bg-slate-50 drop-shadow-md max-w-sm'>
                 <div className='grid grid-rows-4 space-y-4 justify-center place-items-center'>
