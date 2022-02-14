@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Services = () => {
     return (
-      <div id='services' className='h-screen w-screen relative max-w-7xl mx-auto place-self-center text-[#4B505C]'>
+      <div id='services' className='py-20 w-screen relative max-w-7xl mx-auto place-self-center text-[#4B505C]'>
         <h1 className='py-20 text-4xl font-bold'>Nuestros Servicios</h1>
         <div className='grid grid-cols-2 gap-2'>
             <div className='grid grid-cols-2'>

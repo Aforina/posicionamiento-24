@@ -4,7 +4,9 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Services from '../components/Services'
-import Tariffs from '../components/Tariffs'
+import SelfEmployedTariffs from '../components/SelfEmployedTariffs'
+import PymesTariffs from '../components/PymesTariffs'
+import BusinessTariffs from '../components/BusinessTariffs'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 
@@ -19,10 +21,11 @@ export default function Home() {
         <Nav />
       </div>
       <Services />
-      <Tariffs />
+      <SelfEmployedTariffs />
+      <PymesTariffs />
+      <BusinessTariffs />
       <ContactForm />
       <Footer />
-      <h1 className='text-3xl font-bold underline text-red-700'>Hello World!</h1>
     </div>
   )
 }
