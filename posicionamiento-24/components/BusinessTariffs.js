@@ -6,20 +6,22 @@ const BusinessTariffs = () => {
         <div className='flex flex-cols-2 space-x-20 place-items-center justify-center'>
             <div className='bg-slate-50 drop-shadow-md max-w-sm max-h-96'>
                 <div className='text-center p-10'>
-                    <p className='text-4xl font-semibold text-[#FAAC78]'>108,90€</p>
-                    <p className='font-medium mb-4'>Semanal</p>
+                    <p className='text-4xl font-semibold text-[#FAAC78]'>292,50€</p>
+                    <p className='font-medium mb-4'>Mensual</p>
                     <p className='font-normal'>Informe Mensual de Posicionamiento</p>
                     <nav className='w-full h-12 mt-8 bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] text-white rounded-md'>
                       <button className='w-full h-full font-semibold inline-block align-middle' type='contratar'>CONTRATAR</button>
                     </nav>
                 </div>
             </div>
-            <div className='bg-slate-50 drop-shadow-md max-w-sm max-h-96'>
+            <div className='bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] text-white drop-shadow-md max-w-sm max-h-96'>
                 <div className='text-center p-10'>
-                    <p className='text-4xl font-semibold text-[#FAAC78]'>108,90€</p>
-                    <p className='font-medium mb-4'>Semanal</p>
+                    <p className='text-4xl font-semibold text-white'>455,50€</p>
+                    <p className='font-medium mb-4'>Mensual</p>
                     <p className='font-normal'>Informe Mensual de Posicionamiento</p>
-                    <nav className='w-full h-12 mt-8 bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] text-white rounded-md'>
+                    <p className='font-normal'>Creación Básica de Contenido</p>
+                    <p className='font-normal'>Control de Rastreo</p>
+                    <nav className='w-full h-12 mt-8 bg-white text-[#FA8F78] rounded-md'>
                       <button className='w-full h-full font-semibold inline-block align-middle' type='contratar'>CONTRATAR</button>
                     </nav>
                 </div>
