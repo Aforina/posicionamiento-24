@@ -2,24 +2,22 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const ContactForm = () => {
     return (
-      <div id='contactForm' className='pb-20 w-screen relative max-w-3xl mx-auto place-self-center text-[#4B505C] '>
-        <h1 className='text-4xl font-bold text-center pb-14'>Escríbenos</h1>
+      <div id='contactForm' className='pb-8 sm:pb-20 w-screen relative max-w-3xl mx-auto place-self-center text-[#4B505C] '>
+        <h1 className='text-3xl sm:text-4xl font-bold text-center pb-14'>Escríbenos</h1>
         <div className='relative bg-white drop-shadow-md'>
-            <div className='absolute top-20 -left-[5vw] text-center text-white bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] items-center justify-center'>
-                <div className='w-4/5 space-y-4'>
-                    <h1 className='text-3xl my-5 font-semibold'>Información</h1>
-                    <div className='inline-flex'>
-                        <FaEnvelope />
-                        <p>info@posicionamientoweb.com</p>
-                    </div>
-                    <div>
-                        <FaMapMarkerAlt />
-                        <p>C/ Enmedio 20, Castellón, 12006, España</p>
-                    </div>
-                    <div className='inline-flex'>
-                        <FaPhoneAlt className='mr-2 mt-1'/>
-                        <p>+34 637 85 22 56</p>
-                    </div>
+            <div className='absolute grid grid-cols-1 top-20 -left-[5vw] w-2/5 p-8 pb-24 space-y-4 text-white bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] items-center justify-center'>
+                <h1 className='text-3xl my-5 font-semibold text-center '>Información</h1>
+                <div className='inline-flex space-x-1'>
+                    <FaEnvelope className='mr-1 mt-1' />
+                    <p>info@posicionamientoweb.com</p>
+                </div>
+                <div className='inline-flex space-x-1'>
+                    <FaMapMarkerAlt className='mr-2 mt-1' />
+                    <p>C/ Enmedio 20, Castellón, 12006, España</p>
+                </div>
+                <div className='inline-flex space-x-1'>
+                    <FaPhoneAlt className='mr-1 mt-1'/>
+                    <p>+34 637 85 22 56</p>
                 </div>
             </div>
             <div className='flex justify-center ml-48 self-center items-center bg-white py-10'>

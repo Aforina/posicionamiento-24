@@ -7,7 +7,7 @@ const Service = ({title, image, description}) => {
             <div>
                 <Image src={image} layout='fixed' width={80} height={80}/>
             </div>
-            <div className='place-items-center text-base'>
+            <div className='place-items-center'>
                 <p className='font-medium'>{title}</p>
                 <div>{description}</div>
             </div>
