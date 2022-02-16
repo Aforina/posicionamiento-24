@@ -13,8 +13,8 @@ const SelfEmployedTariffs = () => {
         </div>
         <div className='grid grid-cols-3 mt-10 content-center gap-10 max-w-5xl mx-auto'>
           <Card price={'66,55€'} title={'Semanal'} subtitle={'Control de Rastreo'} details={'Creación Básica de Contenido'} details2={''} buttonText={'CONTRATAR'} extraClassNames='bg-white'/>
-          <Card price={'90€'} title={'Semanal'} subtitle={'Informe Mensual de Posicionamient'} details={''} details2={''} buttonText={'CONTRATAR'} extraClassNames='bg-white'/>
-          <Card price={'102,85€'} title={'Semanal'} subtitle={'Seguimiento de Tráfico'} details={''} details2={''} buttonText={'CONTRATAR'} extraClassNames='bg-orange-100'/>
+          <Card price={'90€'} title={'Semanal'} subtitle={'Informe Mensual de Posicionamiento'} details={''} details2={''} buttonText={'CONTRATAR'} extraClassNames='bg-white'/>
+          <Card price={'102,85€'} title={'Semanal'} subtitle={'Seguimiento de Tráfico'} details={''} details2={''} buttonText={'CONTRATAR'} extraClassNames='bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] text-white'/>
         </div>
       </div>
     )

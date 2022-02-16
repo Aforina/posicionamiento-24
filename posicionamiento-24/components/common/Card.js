@@ -4,10 +4,12 @@ const Card = ({price, title, subtitle, details, details2, buttonText, extraClass
             <div className='text-center p-8'>
                 <h1 className='text-4xl font-semibold text-[#FAAC78]'>{price}</h1>
                 <p className='font-medium mb-4'>{title}</p>
-                <p className='font-normal'>{subtitle}</p>
-                <p className='font-normal'>{details}</p>
-                <p className='font-normal'>{details2}</p>
-                <nav className='w-full h-12 mt-8 bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] text-white rounded-md bottom-0'>
+                <div className='space-y-2'>
+                    <p className='font-normal'>{subtitle}</p>
+                    <p className='font-normal'>{details}</p>
+                    <p className='font-normal'>{details2}</p>
+                </div>
+                <nav className='absolute w-3/4 h-12 mt-8 bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] text-white rounded-md bottom-8'>
                     <button className='w-full h-full font-semibold inline-block align-middle' >{buttonText}</button>
                 </nav>
             </div>
