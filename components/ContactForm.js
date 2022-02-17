@@ -1,6 +1,7 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 
 const ContactForm = () => {
@@ -30,20 +31,20 @@ const ContactForm = () => {
 
             // Name Validation
             if (!valores.name) {
-              errores.name = 'Este campo es obligatorio'
+              errores.name = 'Name must be filled out'
             } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.name)) {
-              errores.name = 'Por favor introduce un nombre válido'
+              errores.name = 'Please enter a valid name'
             }
 
             // Email Validation
             if (!valores.email) {
-              errores.email = 'Este campo es obligatorio'
+              errores.email = 'Email address must be filled out'
             } else if (
               !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
                 valores.email
               )
             ) {
-              errores.email = 'Por favor introduce un correo válido'
+              errores.email = 'Please enter a valid email address'
             }
 
             // Number Validation
@@ -51,27 +52,27 @@ const ContactForm = () => {
               !/^[0-9]{2,3}-? ?[0-9]{6,7}$/.test(valores.number) &&
               valores.number !== ''
             ) {
-              errores.number = 'Por favor introduce un número válido'
+              errores.number = 'Please specify a valid phone number'
             }
 
             // Web Validation
             if (!valores.web) {
-              errores.web = 'Este campo es obligatorio'
+              errores.web = 'Web must be filled out'
             }
 
             // Matter Validation
             if (!valores.matter) {
-              errores.matter = 'Este campo es obligatorio'
+              errores.matter = 'Matter must be filled out'
             }
 
             // Message Validation
             if (!valores.message) {
-              errores.message = 'Este campo es obligatorio'
+              errores.message = 'Message must be filled out'
             }
 
             // Terms and Conditions Validation
             if (!valores.terms) {
-              errores.terms = ''
+              errores.terms = 'Terms and Conditions must be accepted'
             }
 
             return errores
