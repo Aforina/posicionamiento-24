@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React, {useState, useRef} from 'react'
+// import { useState, useEffect, useRef } from 'react'
 
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'

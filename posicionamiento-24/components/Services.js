@@ -6,7 +6,7 @@ const Services = () => {
       id='services'
       className='w-screen pb-8 sm:pb-20 relative max-w-xs sm:max-w-7xl mx-auto place-self-center text-[#4B505C]'
     >
-      <h1 className='py-14 text-3xl sm:text-4xl font-bold text-center'>
+      <h1 className='py-14 text-2xl sm:text-4xl font-bold text-center'>
         Nuestros Servicios
       </h1>
       {/*mobile*/}

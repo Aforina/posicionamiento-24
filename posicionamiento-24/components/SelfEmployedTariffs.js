@@ -6,7 +6,7 @@ const SelfEmployedTariffs = () => {
       id='selfemployedtariffs'
       className='pb-8 sm:pb-20 w-screen relative max-w-xs sm:max-w-7xl mx-auto place-self-center text-[#4B505C]'
     >
-      <h1 className='text-3xl sm:text-4xl font-bold pb-14 text-center'>
+      <h1 className='text-2xl sm:text-4xl font-bold pb-14 text-center'>
         Tarifas Para Autónomos
       </h1>
       {/*pc*/}

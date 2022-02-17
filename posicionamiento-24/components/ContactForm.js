@@ -1,15 +1,17 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import React, { useState } from 'react'
+import Image from 'next/image'
+
 
 const ContactForm = () => {
   const [submittedForm, changeSubmittedForm] = useState(false)
   return (
     <div
       id='contactForm'
-      className='pb-8 sm:pb-20 w-screen relative max-w-3xl mx-auto place-self-center text-[#4B505C] '
+      className=' sm:pb-20 pt-3 w-screen relative max-w-3xl mx-auto place-self-center text-[#4B505C] '
     >
-      <h1 className='text-3xl sm:text-4xl font-bold text-center pb-14'>
+      <h1 className='text-2xl sm:text-4xl font-bold text-center pb-14'>
         Escríbenos
       </h1>
       {/*PC*/}
@@ -101,139 +103,139 @@ const ContactForm = () => {
                     <p>+34 637 85 22 56</p>
                   </div>
                 </div>
-                <div className='flex justify-center ml-48 self-center items-center bg-white py-10'>
-                  <div>
-                    <div className='w-full h-14 rounded-lg'>
-                      <p className='pl-3 w-full h-full py-4 '>Nombre</p>
-                      <Field
-                        type='text'
-                        id='name'
-                        name='name'
-                        placeholder='Nombre'
-                        className='underline bg-blue-200'
-                      />
-                    </div>
-                    <div className='text-red-600 font-weight: 600 py-4'>
-                      <ErrorMessage
-                        name='name'
-                        component={() => (
-                          <div className='error'>{errors.name}</div>
-                        )}
-                      />
-                    </div>
-                    <div className='w-full h-14 rounded-lg'>
-                      <p className='pl-3 w-full h-full py-4'>
-                        Correo Electrónico
-                      </p>
-                      <Field
-                        type='text'
-                        id='email'
-                        name='email'
-                        placeholder='Correo'
-                        className='underline bg-blue-200'
-                      />
-                    </div>
-                    <div className='text-red-600 font-weight: 600 py-4'>
-                      <ErrorMessage
-                        name='email'
-                        component={() => (
-                          <div className='error'>{errors.email}</div>
-                        )}
-                      />
-                    </div>
-                    <div className='w-full h-14 rounded-lg'>
-                      <p className='pl-3 w-full h-full py-4'>Teléfono</p>
-                      <Field
-                        type='text'
-                        id='number'
-                        name='number'
-                        placeholder='Teléfono'
-                        className='underline bg-blue-200'
-                      />
-                    </div>
-                    <div className='text-red-600 font-weight: 600 py-4'>
-                      <ErrorMessage
-                        name='number'
-                        component={() => (
-                          <div className='error'>{errors.number}</div>
-                        )}
-                      />
-                    </div>
-                    <div className='w-full h-14 rounded-lg'>
-                      <p className='pl-3 w-full h-full py-4'>Tu Página Web</p>
-                      <Field
-                        type='text'
-                        id='web'
-                        name='web'
-                        placeholder='Web'
-                        className='underline bg-blue-200'
-                      />
-                    </div>
-                    <div className='text-red-600 font-weight: 600 py-4'>
-                      <ErrorMessage
-                        name='web'
-                        component={() => (
-                          <div className='error'>{errors.web}</div>
-                        )}
-                      />
-                    </div>
-                    <div className='w-full h-14 rounded-lg'>
-                      <p className='pl-3 w-full h-full py-4'>Asunto</p>
-                      <Field
-                        type='text'
-                        id='matter'
-                        name='matter'
-                        placeholder='Asunto'
-                        className='underline bg-blue-200'
-                      />
-                    </div>
-                    <div className='text-red-600 font-weight: 600 py-4'>
-                      <ErrorMessage
-                        name='matter'
-                        component={() => (
-                          <div className='error'>{errors.matter}</div>
-                        )}
-                      />
-                    </div>
-                    <div className='w-full h-14 rounded-lg'>
-                      <p className='pl-3 w-full h-full py-4'>Deja tu mensaje</p>
-                      <Field
-                        type='text'
-                        id='message'
-                        name='message'
-                        as='textarea'
-                        placeholder='Deja tu mensaje'
-                        className='underline bg-blue-200'
-                      />
-                    </div>
-                    <div className='text-red-600 font-weight: 600 py-12'>
-                      <ErrorMessage
-                        name='message'
-                        component={() => (
-                          <div className='error'>{errors.message}</div>
-                        )}
-                      />
-                    </div>
-                    <div className='justify-center text-center'>
-                      <label className='w-full'>
+                <div className='w-full justify-center self-center items-center bg-white pt-20 pb-20 pl-72 pr-10 '>
+                  <div className='divide-y'>
+                    <div>
+                      <div className='w-full h-12 rounded-lg'>
                         <Field
-                          type='checkbox'
-                          id='terms'
-                          name='terms'
-                          value='terms'
-                          className='underline bg-blue-200'
+                          type='text'
+                          id='name'
+                          name='name'
+                          placeholder='Nombre'
                         />
-                        Acepto Términos y Condiciones
-                      </label>
-                      <div className='text-red-600 font-weight: 600 py-4'>
+                      </div>
+                      <div className='text-red-600 font-weight: 600'>
                         <ErrorMessage
-                          name='terms'
+                          name='name'
                           component={() => (
-                            <div className='error'>{errors.terms}</div>
+                            <div className='error'>{errors.name}</div>
                           )}
                         />
                       </div>
-                      <div className='text-center p-3 justify-center md:text-4 lg:text-base xl:text-xl cursor-pointers tracking-wider'>
+                    </div>
+                    <div>
+                      <div className='w-full h-12 rounded-lg'>
+                        <Field
+                          type='text'
+                          id='email'
+                          name='email'
+                          placeholder='Correo'
+                        />
+                      </div>
+                      <div className='text-red-600 font-weight: 600'>
+                        <ErrorMessage
+                          name='email'
+                          component={() => (
+                            <div className='error'>{errors.email}</div>
+                          )}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div className='w-full h-12 rounded-lg'>
+                        <Field
+                          type='text'
+                          id='number'
+                          name='number'
+                          placeholder='Teléfono'
+                        />
+                      </div>
+                      <div className='text-red-600 font-weight: 600'>
+                        <ErrorMessage
+                          name='number'
+                          component={() => (
+                            <div className='error'>{errors.number}</div>
+                          )}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div className='w-full h-12 rounded-lg'>
+                        <Field
+                          type='text'
+                          id='web'
+                          name='web'
+                          placeholder='Web'
+                        />
+                      </div>
+                      <div className='text-red-600 font-weight: 600'>
+                        <ErrorMessage
+                          name='web'
+                          component={() => (
+                            <div className='error'>{errors.web}</div>
+                          )}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div className='w-full h-12 rounded-lg'>
+                        <Field
+                          type='text'
+                          id='matter'
+                          name='matter'
+                          placeholder='Asunto'
+                        />
+                      </div>
+                      <div className='text-red-600 font-weight: 600'>
+                        <ErrorMessage
+                          name='matter'
+                          component={() => (
+                            <div className='error'>{errors.matter}</div>
+                          )}
+                        />
+                      </div>
+                    </div>
+                    <div className='pb-4'>
+                      <div className='w-full h-12 rounded-lg'>
+                        <Field
+                          type='text'
+                          id='message'
+                          name='message'
+                          as='textarea'
+                          placeholder='Deja tu mensaje'
+                        />
+                      </div>
+                      <div className='text-red-600 font-weight: 600'>
+                        <ErrorMessage
+                          name='message'
+                          component={() => (
+                            <div className='error'>{errors.message}</div>
+                          )}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div className='justify-center text-center pt-4'>
+                        <label className='w-full'>
+                          <Field
+                            type='checkbox'
+                            id='terms'
+                            name='terms'
+                            value='terms'
+                            className='mr-1'
+                          />
+                          Acepto Términos y Condiciones
+                        </label>
+                        <div className='text-red-600 font-weight: 600'>
+                          <ErrorMessage
+                            name='terms'
+                            component={() => (
+                              <div className='error'>{errors.terms}</div>
+                            )}
+                          />
+                        </div>
+                      </div>
+                      <div className='text-center px-3 justify-center md:text-4 lg:text-base xl:text-xl cursor-pointers tracking-wider'>
                         <nav className='w-full h-12 mt-8 bg-gradient-to-b from-[#FFBB8E] to-[#FA8F78] text-white rounded-md'>
                           <button
                             className='w-full h-full font-semibold inline-block align-middle'
@@ -242,10 +244,10 @@ const ContactForm = () => {
                             ENVIAR
                           </button>
                         </nav>
-                      </div>
-                      {submittedForm && (
+                        {submittedForm && (
                         <p className='exito'>¡Formulario enviado con éxito!</p>
-                      )}
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>

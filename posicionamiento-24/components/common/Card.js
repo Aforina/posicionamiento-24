@@ -24,7 +24,7 @@ const Card = ({
           <p className='font-normal'>{details2}</p>
         </div>
         <nav
-          className={`absolute w-3/4 h-9 sm:h-12 mt-8 rounded-md bottom-4 sm:bottom-8 tracking-wide ${buttonProperties}`}
+          className={`absolute w-11/12 sm:w-3/4 h-9 sm:h-12 mt-8 rounded-md bottom-4 sm:bottom-8 tracking-wide ${buttonProperties}`}
         >
           <button className='w-full h-full font-semibold inline-block align-middle'>
             {buttonText}
